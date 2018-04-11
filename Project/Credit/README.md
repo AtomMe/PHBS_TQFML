@@ -22,8 +22,6 @@ There are totally 199 input variables which may account for the overdue event.On
 	* The last six months' balance,The last six months'trading amount and etc.
 * **Lending information**
 	* max/min amount of money in 30/90/180 days,the last amount of money and etc.
-* **Lending information**
-	* max/min amount of money in 30/90/180 days,the last amount of money and etc.
 * **Repayment information**
 	* times of sucessed/failed repayment in 30/90/180 days, max/min repayment in 30/90/180 days and etc.
 * **Application for loan information**
