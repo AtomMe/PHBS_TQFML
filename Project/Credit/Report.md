@@ -75,7 +75,7 @@ delete the features if the missing rate is greater than **0.4**. After deletion,
 
 We can see that the data labels are imbalaned. defaulting accounts are around 19% and no-defaulting accounts are 81%
 
-There many ways we can solve the imbalanced data problem.
+There are many ways we can solve the imbalanced data problem.
 
 	Re-balance the loss weights
 
@@ -210,12 +210,42 @@ I will select 50 features accorfing to contributions.
 * Valuation
 	* Visualization: Confusion matrices and AUC curves
 	* F1 score
+		* This value is required by the competition, teams are ranked by F1 score
+		* F1 score is sensitive to the threshold of probability, so, here I define a function to select relative best threshold to serve as the threshold to test data
+    	* I will select the average threshold which 5 continue f1 score is maximum
 
+### Implementation & Result
+* Do pre-processing data,include data imputation, data resampling and features selection
+	* [Code](./default-prediction-competition.ipynb)
+	* Result
+		* Logistic regression
+		![](./image/logistic.png)
 
+		* SVM
+		![](./image/SVM.png)
+		* RandomForest
+    		* RandomForestClassifier
+    		![](./image/rf.png)
+    		* GradientBoostingClassifier
+    		![](./image/gb.png)
+		* Deep Neural Network
+		![](./image/dnn.png)
 
+* Do nothing for the raw data but features scaling
+	* [Code](./default-prediction-competition_noprocessing.ipynb)
+	* Result
+		* Logistic regression
+		![](./image/no_logistic.png)
 
-### Implementation
-
+		* SVM
+		![](./image/no_SVM.png)
+		* RandomForest
+    		* RandomForestClassifier
+    		![](./image/no_rf.png)
+    		* GradientBoostingClassifier
+    		![](./image/no_gb.png)
+		* Deep Neural Network
+		![](./image/no_dnn.png)
 
 ### Conclusion
 * **Results and Findings**
