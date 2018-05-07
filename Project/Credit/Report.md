@@ -203,7 +203,7 @@ I will select 50 features accorfing to contributions.
 * Learner
 	* Logistic regression
 	* SVM
-	* RandomForest
+	* Forest
     	* RandomForestClassifier
     	* GradientBoostingClassifier
 	* Deep Neural Network
@@ -218,33 +218,33 @@ I will select 50 features accorfing to contributions.
 * Do pre-processing data,include data imputation, data resampling and features selection
 	* [Code](./default-prediction-competition.ipynb)
 	* Result
-		* Logistic regression
+		* Logistic regression (Test F1 score: **0.4504**, Train F1 score: 0.7592)
 		![](./image/logistic.png)
 
-		* SVM
+		* SVM (Test F1 score: **0.4150**, Train F1 score: 0.7076)
 		![](./image/SVM.png)
-		* RandomForest
-    		* RandomForestClassifier
+		* Forest
+    		* RandomForestClassifier (Test F1 score: **0.4431**, Train F1 score: 0.8698)
     		![](./image/rf.png)
-    		* GradientBoostingClassifier
+    		* GradientBoostingClassifier (Test F1 score: **0.4069**, Train F1 score: 0.8511)
     		![](./image/gb.png)
-		* Deep Neural Network
+		* Deep Neural Network (Test F1 score: **0.4610**, Train F1 score: 0.6237)
 		![](./image/dnn.png)
 
 * Do nothing for the raw data but features scaling
 	* [Code](./default-prediction-competition_noprocessing.ipynb)
 	* Result
-		* Logistic regression
+		* Logistic regression (Test F1 score: **0.4566**, Train F1 score: 0.4805)
 		![](./image/no_logistic.png)
 
-		* SVM
-		![](./image/no_SVM.png)
-		* RandomForest
-    		* RandomForestClassifier
+		* SVM (Test F1 score: **0.2898**, Train F1 score: 0.6137)
+		![](./image/no_SVM.png) 
+		* Forest
+    		* RandomForestClassifier (Test F1 score: **0.4759**, Train F1 score: 0.6454)
     		![](./image/no_rf.png)
-    		* GradientBoostingClassifier
+    		* GradientBoostingClassifier (Test F1 score: **0.4592**, Train F1 score: 0.5888)
     		![](./image/no_gb.png)
-		* Deep Neural Network
+		* Deep Neural Network (Test F1 score: **0.4807**, Train F1 score: 0.6026)
 		![](./image/no_dnn.png)
 
 ### Conclusion
