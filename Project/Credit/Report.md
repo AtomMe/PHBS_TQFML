@@ -53,6 +53,8 @@ There are totally 199 input variables which may account for the overdue event.On
 
 </table>
 
+![](./image/category_distribution.png)
+
 * **Data Structure**
 	* Data Matrix
 	
@@ -128,70 +130,70 @@ You can also check these methods from python [imbalanced-learn](http://contrib.s
   <tr>
     <td> 1 </td>
     <td> x_131  </td>
-	<td> x_131  </td>
+	<td> last amount of money  </td>
 	<td> 4.35%  </td>
   </tr>
 
   <tr>
     <td> 2 </td>
     <td> x_139  </td>
-	<td> x_139  </td>
+	<td> total amount of money in 90 days  </td>
 	<td> 3.15%  </td>
   </tr>
 
   <tr>
     <td> 3 </td>
     <td> x_144  </td>
-	<td> x_144  </td>
+	<td> total amount of money in 180 days  </td>
 	<td> 3.04%  </td>
   </tr>
 
   <tr>
     <td> 4 </td>
     <td> x_142  </td>
-	<td> x_131  </td>
+	<td>number of lending institutions in 180 days  </td>
 	<td> 2.59%  </td>
   </tr>
 
   <tr>
     <td> 5 </td>
     <td> x_190  </td>
-	<td> x_131  </td>
+	<td> number of loan applied in 30 days  </td>
 	<td> 2.55%  </td>
   </tr>
 
   <tr>
     <td> 6 </td>
     <td> x_189  </td>
-	<td> x_131  </td>
+	<td> number of loan applied in 30 days  </td>
 	<td> 2.40%  </td>
   </tr>
 
   <tr>
     <td> 7 </td>
     <td> x_137  </td>
-	<td> x_131  </td>
+	<td> number of lending institutions in 90 days  </td>
 	<td> 2.39%  </td>
   </tr>
 
   <tr>
     <td> 8 </td>
     <td> x_127  </td>
-	<td> x_131  </td>
+	<td> Financial expenditure  </td>
 	<td> 2.32%  </td>
   </tr>
 
   <tr>
     <td> 9 </td>
     <td> x_056  </td>
-	<td> x_131  </td>
+	<td> number of traind in other places in 6 months  </td>
 	<td> 2.32%  </td>
   </tr>
 
   <tr>
     <td> 10 </td>
     <td> x_191  </td>
-	<td> x_131  </td>
+	<td> number of loan applied sucessfully in 30 days  </td>
 	<td> 2.09%  </td>
   </tr>
 
@@ -249,19 +251,15 @@ I will select 50 features accorfing to contributions.
 
 ### Conclusion
 * **Results and Findings**
-
 	* The models seemed to perform better without the missing values being imputed than when imputing the missing values
-	* Stacking and Voting and the combination of the two models generally tend to have very high predictive power compared to plain Ensemble models
-	* Feature Engineering improved the AUC score for single models (Naive Bayes and Logistic Regression) from ~0.7 to ~0.85 but did not have much impact on the Tree based methods
-	* The incremental increase in the predictive accuracy (AUC) is of the order of 0.0001 as we move towards the top of the Kaggle leaderboard (top 2%) and the tuning gets a lot harder
-* **Lessons Learned and Insights**
-	* Hyperparameter tuning is a very time consuming process and it is better to have the team split this effort and work in parallel
-	* Cross Validation is very critical and it is worth spending time testing the impact of various folds on the model accuracy
-	* The model needs to be tuned at a much more granular level as the dataset gets smaller in size (both in terms of number of features and observations)
-	* Following an Agile parallel process has continued to be a proven factor for maximizing success
+	* Feature Engineering improved the F1 score for single models (SVM)
+	* The model DNN seems to perform better than other method under the two conditions, however it is better to use GPU.
+	* Hyperparameter tuning is a very time consuming process and it is better to train in parallel
+	
 * **Future Work**
-	* Tune the parameters for Deep Learning using Theano / Keras and compare the predictive accuracy and performance against Stacking / Voting models
-	* Explore the possibility of adding new polynomial and transformed features, and evaluate the predictive accuracy.
+	* Tune the parameters for Deep Learning using Theano / Keras. 
+	* Explore the possibility of adding new polynomial and transformed features.
+	* Cross Validation is very critical and it is needed to applied on other methods except DNN.
 ### References
 [1]	Lang, W. (2009). Consumer Credit Risk Modeling and the Financial Crisis. International Atlantic Economic Conference.
 
@@ -272,5 +270,8 @@ I will select 50 features accorfing to contributions.
 [4]	孙存一, & 王彩霞. (2015). 机器学习法在信贷风险预测识别中的应用. 中国物价(12), 45-47.
 
 [5]	Lacković, I. D., Kovšca, V., & Vincek, Z. L. (2016). Framework for big data usage in risk management process in banking institutions. Central European Conference on Information and Intelligent Systems, International Conference 2016 / Hunjak, Tihomir ; Kirinić, Valentina ; Konecki, Mario.
+
+
+[6] Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014). Dropout: a simple way to prevent neural networks from overfitting. Journal of Machine Learning Research, 15(1), 1929-1958.
 
 
