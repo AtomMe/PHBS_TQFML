@@ -249,6 +249,52 @@ I will select 50 features accorfing to contributions.
 		* Deep Neural Network (Test F1 score: **0.4807**, Train F1 score: 0.6026)
 		![](./image/no_dnn.png)
 
+<table>
+  <tr>
+    <th width=10%, bgcolor=yellow > Models</th>
+    <th width=30%, bgcolor=yellow> F1 Socre on test data(imputing)</th>
+	<th width=30%, bgcolor=yellow> F1 Socre on test data(no imputing) </th>
+
+  </tr>
+
+  <tr>
+    <td> Logistic regression </td>
+    <td> 0.4504 </td>
+	<td> 0.4566  </td>
+
+  </tr>
+
+  <tr>
+    <td> SVM </td>
+    <td> 0.4150  </td>
+	<td> 0.2898  </td>
+
+  </tr>
+
+  <tr>
+    <td> RandomForestClassifier  </td>
+    <td> 0.4431  </td>
+	<td> 0.4759  </td>
+
+  </tr>
+
+  <tr>
+    <td> GradientBoostingClassifier </td>
+    <td> 0.4069  </td>
+	<td> 0.4592  </td>
+
+  </tr>
+
+  <tr>
+    <td> Deep Neural Network </td>
+    <td> 0.4610  </td>
+	<td> 0.4807  </td>
+
+  </tr>
+
+
+</table>
+
 ### Conclusion
 * **Results and Findings**
 	* The models seemed to perform better without the missing values being imputed than when imputing the missing values
