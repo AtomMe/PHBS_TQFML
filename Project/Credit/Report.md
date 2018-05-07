@@ -3,9 +3,9 @@
 
 ### Project description
 * Project 	Source
-	* This is a competition project. You can check some details from the official website of this [competition](https://open.chinaums.com/#/intro). Also, you can see my [proposal](./Proposal.md). 
+	* This is a competition project. You can check some details from the official website of this [competition](https://open.chinaums.com/#/intro). Also, you can see my [proposal](./proposal.md). 
 * Project Valuation
-	* The competition will select candidate finalists by evaluating **F1 score** on test dataset. If you become one of the candidates, you should submit a document which expains your model. Here is my [document](./document)(about 30 pages).
+	* The competition will select candidate finalists by evaluating **F1 score** on test dataset. If you become one of the candidates, you should submit a document which expains your model. Here is my [document](./document.pdf)(about 30 pages).
 
 * Project Requirement(python packages)
 	* **missingno** (The missingno library provides a few further useful expressions for a deeper look into this subject. There are some useful method to **visualize the data**)
@@ -53,7 +53,7 @@ There are totally 199 input variables which may account for the overdue event.On
 
 </table>
 
-![](./image/category_distribution.png)
+![](./image/category_distribution.PNG)
 
 * **Data Structure**
 	* Data Matrix
