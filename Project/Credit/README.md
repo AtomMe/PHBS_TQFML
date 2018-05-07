@@ -2,12 +2,12 @@
 
 
 ### Project description
-* Project 	Source
+* **Project 	Source**
 	* This is a competition project. You can check some details from the official website of this [competition](https://open.chinaums.com/#/intro). Also, you can see my [proposal](./proposal.md). 
-* Project Valuation
+* **Project Valuation**
 	* The competition will select candidate finalists by evaluating **F1 score** on test dataset. If you become one of the candidates, you should submit a document which expains your model. Here is my [document](./document.pdf)(about 30 pages).
 
-* Project Requirement(python packages)
+* **Project Requirement(python packages)**
 	* **missingno** (The missingno library provides a few further useful expressions for a deeper look into this subject. There are some useful method to **visualize the data**)
 	* **Impyute** (Impyute is a library of missing data imputation algorithms. Data imputations library to preprocess datasets with missing data. More infomation you can check the website [http://impyute.readthedocs.io/](http://impyute.readthedocs.io/))
 	* **imbalanced-learn** (This package aims to process the imbalaned data. There are many methods,including oversapmling and under-sampling)
@@ -56,22 +56,22 @@ There are totally 199 input variables which may account for the overdue event.On
 ![](./image/category_distribution.PNG)
 
 * **Data Structure**
-	* Data Matrix
+	* **Data Matrix**
 	
 ![](./image/matrix.png)
 
 The blank cells are missing data just like the csv file and right figure shows the number of missing data each row.
 
-* Histogram of Missing rate
+* **Histogram of Missing rate**
 
 ![](./image/hist_missingrate.png)
 
 delete the features if the missing rate is greater than **0.4**. After deletion, There are **117 features** survived. 
 
-* Dealing with Missing Data
+* **Dealing with Missing Data**
 	* see more details from another jupyter notebook to process the missing data([missing_ data_ process.ipynb](./missing_data_process.ipynb))
 
-* Dealing with the imbalanced label
+* **Dealing with the imbalanced label**
 
 ![](./image/imbalanced.png)
 
@@ -104,14 +104,14 @@ You can also check these methods from python [imbalanced-learn](http://contrib.s
 
 
 ### Features 
-* Feature scaling
+* **Feature scaling**
 	* MinMaxScaler
 	* StandardScaler N(0,1)
 	* RobustScaler avoid outliers
 
 ! X_ test's standardization should use the mean and std of X_train
 
-* Feature selection
+* **Feature selection**
 	* Too many features may cause overfitting
 	* Here we reduce the features by assessing feature importance with **random forests**
 	* Also,There are no need to reduce the features for some machine learning method. We can apply other method to control overfitting.eg. dropout for DNN
@@ -202,14 +202,14 @@ You can also check these methods from python [imbalanced-learn](http://contrib.s
 I will select 50 features accorfing to contributions.
 
 ### Methods
-* Learner
+* **Learner**
 	* Logistic regression
 	* SVM
 	* Forest
     	* RandomForestClassifier
     	* GradientBoostingClassifier
 	* Deep Neural Network
-* Valuation
+* **Valuation**
 	* Visualization: Confusion matrices and AUC curves
 	* F1 score
 		* This value is required by the competition, teams are ranked by F1 score
