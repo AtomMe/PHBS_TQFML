@@ -13,6 +13,7 @@
 	* **imbalanced-learn** (This package aims to process the imbalaned data. There are many methods,including oversapmling and under-sampling)
 	* **keras and tensorflow-gpu** (using Deep Neural Network method with GPU)
 	* **skicit-learn**
+	* **python2.7**
 ### Data
 There are totally 199 input variables which may account for the overdue event.On the whole, They are divided into six categories.
 
@@ -62,9 +63,9 @@ There are totally 199 input variables which may account for the overdue event.On
 
 The blank cells are missing data just like the csv file and right figure shows the number of missing data each row.
 
-* **Histogram of Missing rate**
+* **Distribution of Missing rate**
 
-![](./image/hist_missingrate.png)
+![](./image/missing_rate.png)
 
 delete the features if the missing rate is greater than **0.4**. After deletion, There are **117 features** survived. 
 
@@ -109,7 +110,7 @@ You can also check these methods from python [imbalanced-learn](http://contrib.s
 	* StandardScaler N(0,1)
 	* RobustScaler avoid outliers
 
-! X_ test's standardization should use the mean and std of X_train
+**!** X_ test's standardization should use the mean and std of X_train
 
 * **Feature selection**
 	* Too many features may cause overfitting
