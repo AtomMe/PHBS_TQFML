@@ -3,7 +3,7 @@
 ----------
 
 ## Team members
-Tang Jieqiang (Atom)
+**Tang** Jieqiang (Atom)
 ## Idea
 This project aims to implenment Machine Learning method to predict whether or not a loan will be overdue. This can help banks decide who can get finance and on what terms and can make or break investment decisions. The model was trained on multi-demension input data. 
 
